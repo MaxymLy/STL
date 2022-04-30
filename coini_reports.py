@@ -7,6 +7,6 @@ def coini():
     uploaded_file = st.file_uploader("Upload CSV", type=".xlsx")
 
     if uploaded_file:
-        df = pd.read_excel(uploaded_file, index_col=3)
+        df = pd.read_excel(uploaded_file, index_col=2)
         st.dataframe(df)
 
