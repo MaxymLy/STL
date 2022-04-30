@@ -11,8 +11,8 @@ def coini():
         df = pd.read_excel(uploaded_file)
         st.dataframe(df)
 
-        df[df['Remarks'] == "<NA>"]['Remarks'] = df[df['Remarks'] == "<NA>"]['KYC Status']
 
-        st.dataframe(df)
+
+        st.dataframe(df.loc["<NA>",['Remarks']])
 
 
