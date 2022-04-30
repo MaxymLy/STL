@@ -11,7 +11,7 @@ def coini():
         df = pd.read_excel(uploaded_file)
         st.dataframe(df)
 
-        df[df['Remarks'].isna()]['Remarks'] = df[df['Remarks'].isna()]['KYC Status']
+        df[df['Remarks'] == "<NA>"]['Remarks'] = df[df['Remarks'] == "<NA>"]['KYC Status']
 
         st.dataframe(df)
 
