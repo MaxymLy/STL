@@ -13,4 +13,4 @@ def coini():
 
         df.loc[df['Remarks'].isna(), ['Remarks']] = 'ggg'  # = df.loc[df['Remarks'].isna(), ['KYC Status']]
 
-        st.dataframe()
+        st.dataframe(df)
