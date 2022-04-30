@@ -10,3 +10,9 @@ def coini():
     if uploaded_file:
         df = pd.read_excel(uploaded_file)
         st.dataframe(df)
+
+        df[df['Remarks'].isna()]['Remarks'] = df[df['Remarks'].isna()]['KYC Status']
+
+        st.dataframe(df)
+
+
