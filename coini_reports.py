@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import openpyxl.openpyxl as openpyxl
+import openpyxl
 
 def coini():
     st.write('Everything')
