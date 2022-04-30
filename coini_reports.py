@@ -8,5 +8,5 @@ def coini():
     if uploaded_file:
         df = pd.read_excel(uploaded_file, index_col=3)
 
-    st.dataframe(df)
+        st.dataframe(df)
 
